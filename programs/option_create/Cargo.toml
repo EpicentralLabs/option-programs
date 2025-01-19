@@ -9,6 +9,7 @@ crate-type = ["cdylib", "lib"]
 name = "option_create"
 
 [features]
+solana = []
 default = []
 custom-heap = []
 cpi = ["no-entrypoint"]
@@ -18,4 +19,5 @@ no-log-ix-name = []
 idl-build = ["anchor-lang/idl-build"]
 
 [dependencies]
+sos-common = { path = "../../sos-common"}
 anchor-lang = "0.30.1"

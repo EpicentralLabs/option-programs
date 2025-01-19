@@ -1,12 +1,12 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { SosPrograms } from "../target/types/sos_programs";
+import { OptionCreate } from '../target/types/option_create';
 
-describe("sos_programs", () => {
+describe("option_create", () => {
   // Configure the client to use the local cluster.
   anchor.setProvider(anchor.AnchorProvider.env());
 
-  const program = anchor.workspace.SosPrograms as Program<SosPrograms>;
+  const program = anchor.workspace.OptionCreate as Program<OptionCreate>;
 
   it("Is initialized!", async () => {
     // Add your test here.

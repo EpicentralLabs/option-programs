@@ -13,4 +13,4 @@ pub mod option_create {
 }
 
 #[derive(Accounts)]
-pub struct Initialize {}
+pub struct CreateOption {}
